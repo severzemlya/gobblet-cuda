@@ -1,0 +1,26 @@
+[package]
+name = "gobblet-cuda"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "Strongly solve Gobblet Gobblers by retrograde analysis, on the CPU or on a CUDA GPU in under a second"
+license = "MIT"
+repository = "https://github.com/severzemlya/gobblet-cuda"
+readme = "README.md"
+keywords = ["gobblet", "retrograde-analysis", "game-solving", "cuda", "board-game"]
+categories = ["games", "science"]
+publish = false
+
+[features]
+default = []
+# GPU backend: kernels are compiled at run time with NVRTC through cudarc.
+cuda = ["dep:cudarc"]
+
+[dependencies]
+rayon = "1.10"
+cudarc = { version = "=0.16.6", optional = true, default-features = false, features = ["std", "driver", "nvrtc", "cuda-version-from-build-system", "dynamic-linking"] }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1

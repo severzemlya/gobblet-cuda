@@ -1,0 +1,66 @@
+== machine
+name, memory.total [MiB], clocks.max.sm [MHz], power.limit [W], driver_version
+NVIDIA GeForce RTX 3090, 24576 MiB, 2115 MHz, 250.00 W, 595.99.02
+== gpu (repeated)
+checksum: 51faf6e0b054c96f
+time: enumerate 0.497s / retrograde 0.451s / total 0.949s (25 passes)
+checksum: 51faf6e0b054c96f
+time: enumerate 0.495s / retrograde 0.452s / total 0.947s (25 passes)
+checksum: 51faf6e0b054c96f
+time: enumerate 0.496s / retrograde 0.452s / total 0.948s (25 passes)
+== gpu detail
+== Gobblet Gobblers retrograde analysis (sizes=3 per_size=2 move=1) backend=gpu NVIDIA GeForce RTX 3090
+reachable positions (up to symmetry and side swap): 341024631
+  breadth-first levels: 15
+  terminal: 155537308
+side to move wins 241624949 / loses 99295532 / draws 104150 (longest: 24 plies)
+empty board: first player wins in 13 plies
+first moves (result for the first player; squares 0 1 2 / 3 4 5 / 6 7 8):
+  small : W15 W13 W15 W13 W15 W13 W15 W13 W15
+  medium: L14 L12 L14 L12 L12 L12 L14 L12 L14
+  large : W13 W15 W13 W15 W13 W15 W13 W15 W13
+checksum: 51faf6e0b054c96f
+time: enumerate 0.496s / retrograde 0.451s / total 0.947s (25 passes)
+level	expanded	found	seconds
+0	1	9	0.0018
+1	9	117	0.0000
+2	117	1263	0.0001
+3	1263	14949	0.0001
+4	14949	102612	0.0001
+5	102612	690724	0.0002
+6	690724	2929249	0.0014
+7	2929249	11633925	0.0062
+8	11633925	28996672	0.0275
+9	28996672	68278794	0.0675
+10	68278794	86298799	0.1417
+11	86298799	116354101	0.1397
+12	116354101	25722473	0.1061
+13	25722473	943	0.0007
+14	943	0	0.0000
+depth	wins	losses	seconds
+0	0	0	0.0000
+1	153735200	220	0.1580
+2	684	15241528	0.1303
+3	7471498	534	0.0574
+4	572	3933153	0.0393
+5	2186105	999	0.0182
+6	1149	1178972	0.0125
+7	738328	405	0.0063
+8	299	384191	0.0045
+9	249866	118	0.0025
+10	38	115605	0.0019
+11	70711	8	0.0012
+12	6	32611	0.0011
+13	19287	6	0.0009
+14	0	9146	0.0008
+15	5513	0	0.0008
+16	0	3319	0.0008
+17	1640	0	0.0008
+18	0	934	0.0007
+19	317	0	0.0008
+20	0	126	0.0007
+21	46	0	0.0007
+22	0	33	0.0007
+23	5	0	0.0007
+24	0	1	0.0007
+25	0	0	0.0007
